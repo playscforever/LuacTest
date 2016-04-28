@@ -3,6 +3,9 @@ local GameMainLayer = class("GameMainLayer", function()
 	return display.newScene("GameMainLayer")
 end)
 
+
+GameMainLayer.title = nil 
+
 function GameMainLayer:ctor()
 	-- self._myLabel = cc.ui.UILabel.new({
 	-- 		UILabelType = 2,
@@ -29,6 +32,9 @@ function GameMainLayer:ctor()
     self:testPopupLayer()
     self:testregisterScriptTapHandler()
     self:testJava()
+    self:testJava2()
+    GameMainLayer.title = G.createLabel(self," this is callbak out put ",333,333,true)
+    -- GameMainLayer.title:setString("hehe")
 end
 
 function GameMainLayer:addTouch()
@@ -155,6 +161,31 @@ function GameMainLayer:testJava()
         luaj.callStaticMethod(javaClassName, javaMethodName, javaParams, javaMethodSig)
     end 
     G.createMenuWithLabel({parent = self, strings = "javaPrint", clickFunc = callback, x = 100, y = display.cy})
+
+end 
+
+
+function GameMainLayer:testJava2()
+    local callback = function()
+        -- call Java method
+        local javaClassName = "com/yzj/tools/NativeProxy"
+        local javaMethodName = "showAlertDialog"
+        local javaParams = {
+            "How are you ?",
+            "I'm great !",
+            function(event)
+                local str = "Java method callback value is [" .. event .. "]"
+                GameMainLayer.title:setString(str)
+            end
+        }
+        local javaMethodSig = "(Ljava/lang/String;Ljava/lang/String;I)V"
+
+        -- javaClassName = "org/cocos2dx/lua/NativeProxyTest"
+        -- javaParams = {"this is lua for java"}
+        -- javaMethodSig = "(Ljava/lang/String;)V"
+        luaj.callStaticMethod(javaClassName, javaMethodName, javaParams, javaMethodSig)
+    end 
+    G.createMenuWithLabel({parent = self, strings = "javaCallback", clickFunc = callback, x = 100, y = display.cy-100})
 
 end 
 

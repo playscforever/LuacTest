@@ -52,6 +52,7 @@ import android.view.WindowManager;
 import android.widget.Toast;
 import com.anysdk.framework.PluginWrapper;
 
+import com.yzj.tools.NativeProxy;
 
 public class AppActivity extends Cocos2dxActivity{
 
@@ -59,7 +60,7 @@ public class AppActivity extends Cocos2dxActivity{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+		NativeProxy.setContext(this);
 		if(nativeIsLandScape()) {
 			setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 		} else {

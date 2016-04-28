@@ -158,6 +158,7 @@ E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\src\config.lua \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\src\framework \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\src\main.lua \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\src\app\GlobalFunc.lua \
+E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\src\app\GlobalFunc.lua.dump \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\src\app\GlobalVar.lua \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\src\app\MyApp.lua \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\src\app\scenes \

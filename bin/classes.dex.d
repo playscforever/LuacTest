@@ -1,4 +1,7 @@
 E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes.dex : \
+E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\com\yzj\tools\NativeProxy$1$1$1.class \
+E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\com\yzj\tools\NativeProxy$1$1.class \
+E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\com\yzj\tools\NativeProxy$1.class \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\com\yzj\tools\NativeProxy.class \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\lib\QuickHTTPInterface.class \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\lua\AppActivity$1.class \
