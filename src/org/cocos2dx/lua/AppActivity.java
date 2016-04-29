@@ -26,10 +26,6 @@ THE SOFTWARE.
 ****************************************************************************/
 package org.cocos2dx.lua;
 
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.net.SocketException;
-import java.util.Enumeration;
 import java.util.ArrayList;
 
 import org.cocos2dx.lib.Cocos2dxActivity;
@@ -38,7 +34,6 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ApplicationInfo;
 import android.content.pm.ActivityInfo;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -46,12 +41,10 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.Settings;
-import android.text.format.Formatter;
 import android.util.Log;
 import android.view.WindowManager;
-import android.widget.Toast;
-import com.anysdk.framework.PluginWrapper;
 
+import com.anysdk.framework.PluginWrapper;
 import com.yzj.tools.NativeProxy;
 
 public class AppActivity extends Cocos2dxActivity{
@@ -94,29 +87,6 @@ public class AppActivity extends Cocos2dxActivity{
 			}
 		}
 		hostIPAdress = getHostIpAddress();
-
-
-
-                AlertDialog.Builder builder=new AlertDialog.Builder(this);
-                builder.setTitle("Warning");
-                builder.setMessage("Please open WIFI for debuging...");
-                builder.setPositiveButton("OK",new DialogInterface.OnClickListener() {
-                    
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        // startActivity(new Intent(Settings.ACTION_WIFI_SETTINGS));
-                        // finish();
-                        // System.exit(0);
-                        System.out.println("test yzj");
-                        Log.e("yzj","hehe yzj");
-                    }
-                });
-
-                builder.setNegativeButton("Cancel", null);
-                builder.setCancelable(true);
-                builder.show();
-
-
 
         //for anysdk
         PluginWrapper.init(this); // for plugins
