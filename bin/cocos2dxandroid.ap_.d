@@ -14,7 +14,6 @@ E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\res\drawable-hdpi\icon.pn
 E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\res\drawable-ldpi\icon.png \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\res\drawable-mdpi\icon.png \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\config.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\debug.log \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\src \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\arrow.png \
@@ -45,74 +44,17 @@ E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\VIP.png \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\Yellow.fnt \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\Yellow.png \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Json \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\PauseLayer.xml.ui \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Resources \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Ruler \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 225846 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 230346 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 230846 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 231346 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 231846 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 232346 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 232846 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 233346 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 233846 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 234346 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\NormalCloseTag.xml \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 225846\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 230346\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 230846\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 231346\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 231846\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 232346\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 232846\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 233346\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 233846\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Backup\20160422 234346\PauseLayer_1.json \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Json\PauseLayer_1.json \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Resources\img \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Resources\img\bg1.png \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocosStudio160\PauseLayer\Ruler\PauseLayer.xml \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Export \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Json \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\PauseLayer.xml.ui \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Resources \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Ruler \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 212908 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 213408 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 213908 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 214408 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 214908 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 215408 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 215908 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 220408 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 220908 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 221408 \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\NormalCloseTag.xml \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 212908\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 212908\PauseLayer_2.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 213408\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 213408\PauseLayer_2.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 213908\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 213908\PauseLayer_2.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 214408\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 214408\PauseLayer_2.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 214908\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 214908\PauseLayer_2.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 215408\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 215408\PauseLayer_2.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 215908\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 215908\PauseLayer_2.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 220408\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 220408\PauseLayer_2.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 220908\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 220908\PauseLayer_2.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 221408\PauseLayer_1.json \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Backup\20160422 221408\PauseLayer_2.json \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Export\PauseLayer_1 \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Export\PauseLayer_1\img \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Export\PauseLayer_1\PauseLayer_1.json \
@@ -121,7 +63,6 @@ E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\Pause
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Json\PauseLayer_2.json \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Resources\img \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Resources\img\bg1.png \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\cocos_studio\PauseLayer\Ruler\PauseLayer.xml \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\fonts\arial.ttf \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\GameRPG\buildings \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\assets\res\GameRPG\envir \

@@ -33,6 +33,8 @@ function GameMainLayer:ctor()
     self:testregisterScriptTapHandler()
     self:testJava()
     self:testJava2()
+    self:testLuaCallCPP()
+
     GameMainLayer.title = G.createLabel(self," this is callbak out put ",333,333,true)
     -- GameMainLayer.title:setString("hehe")
 end
@@ -183,4 +185,18 @@ function GameMainLayer:testJava2()
 
 end 
 
+
+function GameMainLayer:testLuaCallCPP()
+    local callback = function()
+        print(cc.Sprite)
+        print(pp.CircleBy)
+        local radius = 50
+        local x = GameMainLayer.title:getPositionX()
+        local y = GameMainLayer.title:getPositionY() - radius
+        local circle = pp.CircleBy:create(2, cc.p(x,y) , radius)
+        GameMainLayer.title:runAction(circle)
+    end 
+    G.createMenuWithLabel({parent = self, strings = "LuaC", clickFunc = callback, x = 100, y = display.cy-200})
+
+end 
 return GameMainLayer

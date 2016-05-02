@@ -5,7 +5,6 @@ E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\com\yzj\tools\Nat
 E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\com\yzj\tools\NativeProxy.class \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\lib\QuickHTTPInterface.class \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\lua\AppActivity$1.class \
-E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\lua\AppActivity$2.class \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\lua\AppActivity.class \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\lua\NativeProxyTest.class \
 E:\QuickStudy1\frameworks\runtime-src\proj.android\bin\classes\org\cocos2dx\quickstudy1\BuildConfig.class \
