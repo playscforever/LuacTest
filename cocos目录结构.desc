@@ -1,0 +1,16 @@
+frameworks:
+    cocos2d-x: 引擎源码相关，包括VS工程
+        build：VS工程
+        cocos： 源码相关代码
+            scripting/lua-bindings binding文件生成的位置，以及源码相关binding  还有不同平台binding的母工程
+                auto ： 存放自定义桥接文件
+                    api ： 桥接文件api
+            platform：创建新cocos工程需要的母包
+        extensions：  源码相关拓展代码
+        external：       源码相关拓展代码
+        tools：绑定lua相关的工具
+            bindings-generator: binding相关的一些工具
+            tolua： ini配置文件以及binding脚本
+    runtime-src: 各平台对应的工程以及对应各个平台单独编写的代码
+        Classes：C++代码
+        proj.*不同平台对应的工程和代码
