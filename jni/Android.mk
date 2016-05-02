@@ -30,7 +30,10 @@ endif
 #anysdk
 LOCAL_SRC_FILES += \
 ../../Classes/anysdkbindings.cpp \
-../../Classes/anysdk_manual_bindings.cpp
+../../Classes/anysdk_manual_bindings.cpp \
+../../Classes/CCCircleBy.cpp \
+../../Classes/lua_cocos2dx_pp_auto.cpp 
+
 
 LOCAL_C_INCLUDES := \
 $(LOCAL_PATH)/../../Classes/runtime \
