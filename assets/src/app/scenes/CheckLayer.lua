@@ -8,6 +8,8 @@ function CheckLayer:ctor()
     sprite:setScale(2)
     self:addChild(sprite)
 
+    self._label = G.createLabel(self,"this is callbak out put ",display.cx,display.height - 200,true)
+
     G.createMenuWithLabel({parent = self, strings = "开始更新",
         clickFunc = function() 
             self:_checkInnerUpgrade()
@@ -21,10 +23,17 @@ function CheckLayer:ctor()
             display.replaceScene(require("app.scenes.InnerLayer").new())
         end, x = display.cx, y = display.cy-100})
 
-    G.createMenuWithLabel({parent = self, strings = "getConfig",
+    G.createMenuWithLabel({parent = self, strings = "getVersion",
         clickFunc = function() 
-            G.callNativeMethod{name = "getConfig" , params = nil}
+            local version = G.callNativeMethod{name = "getVersion" , params = nil , ret = "string"}
+            self._label:setString(version)
         end, x = display.cx, y = display.cy-200})
+
+    -- G.createMenuWithLabel({parent = self, strings = "getIntValue",
+    --     clickFunc = function() 
+    --         local version = G.callNativeMethod{name = "getIntValue" , params = nil , ret = "int"}
+    --         self._label:setString(version)
+    --     end, x = display.cx, y = display.cy-300})
 end 
 
 

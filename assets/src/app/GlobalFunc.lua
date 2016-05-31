@@ -257,16 +257,51 @@ function GlobalFunc.createMenuWithLabel(params)
     return menu
 end 
 
+local function checkArguments(args, sig ,returnType)
+    if type(args) ~= "table" then args = {} end
+    if sig then return args, sig end
+
+    sig = {"("}
+    for i, v in ipairs(args) do
+        local t = type(v)
+        if t == "number" then
+            sig[#sig + 1] = "F"
+        elseif t == "boolean" then
+            sig[#sig + 1] = "Z"
+        elseif t == "function" then
+            sig[#sig + 1] = "I"
+        else
+            sig[#sig + 1] = "Ljava/lang/String;"
+        end
+    end
+
+    local returnSig = 'V'
+    if returnType  ~= nil then
+        if returnType == "boolean" then
+            returnSig = 'Z'
+        elseif returnType == "int" then
+            returnSig = 'I'
+        elseif returnType == "string" then
+            returnSig = 'Ljava/lang/String;'
+        end
+    end
+    sig[#sig + 1] = ")" .. returnSig
+    return args, table.concat(sig)
+end
 
 
-
--- 提供方法名和参数就可以了   MethodSig会自动生成
+-- 提供方法名和参数就可以了   MethodSig会自动生成VOID对应的参数
 function GlobalFunc.callNativeMethod(params)
     local javaClassName = "com/yzj/tools/NativeProxy"
     local javaMethodName = params.name
     local javaParams = params.params
-    if device.platform == "android" then 
-        luaj.callStaticMethod(javaClassName, javaMethodName, javaParams)
+    local retType = params.ret
+    if device.platform == "android" or true then 
+        local args, sig = checkArguments(javaParams, sig,retType)
+        print(sig)
+        -- 一定要注意这里有两个返回值啊！！！
+        local ok,ret = luaj.callStaticMethod(javaClassName, javaMethodName, javaParams,sig)
+        return ret
     else 
         print("not android")
     end 
