@@ -89,7 +89,8 @@ end
 function GlobalFunc.createLabel(parent, _text,x,y,autoAdd)
     local label = cc.ui.UILabel.new({
         UILabelType = 2,
-        text = _text
+        text = _text,
+        size = 40,
     }):align(display.CENTER, x, y)
     if autoAdd then 
         label:addTo(parent)

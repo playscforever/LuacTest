@@ -10,8 +10,12 @@ function MyApp:ctor()
 end
 
 function MyApp:run()
+    
+    cc.FileUtils:getInstance():addSearchPath("res/beforeinner/")
+    self:enterScene("CheckLayer")
+    cc.FileUtils:getInstance():addSearchPath(cc.FileUtils:getInstance():getWritablePath() .. "upgrade/res/")
+    cc.FileUtils:getInstance():addSearchPath(cc.FileUtils:getInstance():getWritablePath() .. "upgrade/src/")
     cc.FileUtils:getInstance():addSearchPath("res/")
-    self:enterScene("GameMainLayer")
 --    local nextScene = require("app.scenes.TestScene").create()
 --    display.replaceScene(nextScene)
 end

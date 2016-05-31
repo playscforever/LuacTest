@@ -13,6 +13,7 @@ function GameMainLayer:ctor()
 	-- 	})
 	-- self._myLabel:align(display.CENTER,display.cx,display.cy - 100):addTo(self,1)
 	local sprite = display.newSprite("bg_login.png",display.cx,display.cy)
+    sprite:setScale(2)
 	self:addChild(sprite)
 	
 --    self._myChat = display.newSprite("icon-liaotian.png",display.cx , display.height - 100):addTo(self,1)
@@ -25,7 +26,7 @@ function GameMainLayer:ctor()
     G_GlobalFunc.createButton("back.png", self, display.cx , display.height - 200, true)
 
     print("globalfunction " .. tostring(G_GlobalFunc.get_distance(1,1,2,2)))
-
+    
     self:testConvertSpace()
     self:addTouch()
     self:testTimer()
@@ -34,7 +35,8 @@ function GameMainLayer:ctor()
     self:testJava()
     self:testJava2()
     self:testLuaCallCPP()
-
+    self:innerUpgrade()
+    print(cc.FileUtils:getInstance():getWritablePath())
     GameMainLayer.title = G.createLabel(self," this is callbak out put ",333,333,true)
     -- GameMainLayer.title:setString("hehe")
 end
@@ -172,8 +174,8 @@ end
 function GameMainLayer:testJava2()
     local callback = function()
         local javaParams = {
-            "How are you ?",
-            "I'm great !",
+            cc.FileUtils:getInstance():getWritablePath(),
+            cc.FileUtils:getInstance():getWritablePath(),
             function(event)
                 local str = "Java method callback value is [" .. event .. "]"
                 GameMainLayer.title:setString(str)
@@ -199,4 +201,21 @@ function GameMainLayer:testLuaCallCPP()
     G.createMenuWithLabel({parent = self, strings = "LuaC", clickFunc = callback, x = 100, y = display.cy-200})
 
 end 
+
+
+
+function GameMainLayer:innerUpgrade()
+    print(cc.FileUtils:getInstance():getWritablePath() .. "upgrade/res/")
+    cc.FileUtils:getInstance():addSearchPath(cc.FileUtils:getInstance():getWritablePath() .. "upgrade/res/")
+    local callback = function()
+        local javaParams = {
+            cc.FileUtils:getInstance():getWritablePath()
+        }
+        G.callNativeMethod{name = "downloadSth" , params = javaParams}
+    end 
+    G.createMenuWithLabel({parent = self, strings = "downloadSth", clickFunc = callback, x = 300, y = display.cy-100})
+
+end 
+
+
 return GameMainLayer

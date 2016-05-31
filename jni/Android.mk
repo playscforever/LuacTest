@@ -11,6 +11,11 @@ LOCAL_SRC_FILES := hellolua/main.cpp \
 ../../Classes/AppDelegate.cpp \
 ../../Classes/ConfigParser.cpp
 
+#custom class
+LOCAL_SRC_FILES += \
+../../Classes/CCCircleBy.cpp \
+../../Classes/lua_cocos2dx_pp_auto.cpp 
+
 ifeq ($(NDK_DEBUG),1)
 LOCAL_SRC_FILES += \
 hellolua/Runtime_android.cpp \
@@ -30,10 +35,7 @@ endif
 #anysdk
 LOCAL_SRC_FILES += \
 ../../Classes/anysdkbindings.cpp \
-../../Classes/anysdk_manual_bindings.cpp \
-../../Classes/CCCircleBy.cpp \
-../../Classes/lua_cocos2dx_pp_auto.cpp 
-
+../../Classes/anysdk_manual_bindings.cpp 
 
 LOCAL_C_INCLUDES := \
 $(LOCAL_PATH)/../../Classes/runtime \
