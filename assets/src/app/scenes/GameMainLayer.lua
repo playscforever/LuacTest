@@ -19,7 +19,7 @@ function GameMainLayer:ctor()
 --    self._myChat = display.newSprite("icon-liaotian.png",display.cx , display.height - 100):addTo(self,1)
 
     G_GlobalFunc.createColorLayer({parent = self, color4B = cc.c4b(255, 0, 0, 125), 
-    	autoAdd = true, zOrder = 1 , x = 100, y = display.height - 100,
+    	autoAdd = true, zOrder = 3 , x = 100, y = display.height - 100,
     	size = cc.size(100,100)})
 
     local chat = G_GlobalFunc.createButton("icon-liaotian.png", self, display.cx , display.height - 100, true)

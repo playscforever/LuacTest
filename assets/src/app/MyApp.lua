@@ -12,6 +12,8 @@ end
 function MyApp:run()
     
     cc.FileUtils:getInstance():addSearchPath("res/beforeinner/")
+    -- cc.FileUtils:getInstance():addSearchPath("res/")
+    -- self:enterScene("GameMainLayer")
     self:enterScene("CheckLayer")
     cc.FileUtils:getInstance():addSearchPath(cc.FileUtils:getInstance():getWritablePath() .. "upgrade/res/")
     cc.FileUtils:getInstance():addSearchPath(cc.FileUtils:getInstance():getWritablePath() .. "upgrade/src/")

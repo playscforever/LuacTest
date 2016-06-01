@@ -307,6 +307,35 @@ function GlobalFunc.callNativeMethod(params)
     end 
 end 
 
+
+function GlobalFunc.getVersion()
+    local versionFile = cc.FileUtils:getInstance():getWritablePath() .. "version"
+    local file = io.open(versionFile,"r")
+    if not file then 
+        -- 第一次进入游戏 构造file
+        file = io.open(versionFile, "w")
+        io.output(file)
+        G_VERSION = G.callNativeMethod{name = "getVersion" , params = nil , ret = "string"}
+        io.write(G_VERSION)
+        io.close(file)
+    else 
+        file = io.open(versionFile,"r")
+        for line in file:lines() do
+            G_VERSION = line
+            break
+        end        
+    end 
+    return G_VERSION
+end 
+
+function GlobalFunc.setVersion()
+    local versionFile = cc.FileUtils:getInstance():getWritablePath() .. "version"
+    file = io.open(versionFile, "w")
+    io.output(file)
+    io.write(G_VERSION)
+    io.close(file)
+end 
+
 return GlobalFunc
 
 

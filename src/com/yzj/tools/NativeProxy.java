@@ -173,7 +173,8 @@ public class NativeProxy {
 		String appVersion = "";
 		PackageManager manager = mContext.getPackageManager();
 		try {
-			PackageInfo info = manager.getPackageInfo(mContext.getPackageName(), 0);
+			PackageInfo info = manager.getPackageInfo(
+					mContext.getPackageName(), 0);
 			appVersion = info.versionName; // 版本名
 		} catch (NameNotFoundException e) {
 			e.printStackTrace();
@@ -182,14 +183,27 @@ public class NativeProxy {
 		return appVersion;
 	}
 
-	
-	public static int getIntValue(){
+	public static int getIntValue() {
 		System.out.println("yzj getSTringValue()");
 		return 1;
 	}
-	
+
+	public static void getConfig(String Localpath, String remoteFilePath,
+			String remoteFileName, final int luaCallbackFunction) {
+		downloadSth(Localpath, remoteFilePath, remoteFileName);
+		mContext.runOnGLThread(new Runnable() {
+			@Override
+			public void run() {
+				System.out.println("yzj getConfig");
+				Cocos2dxLuaJavaBridge.callLuaFunctionWithString(
+						luaCallbackFunction, "CLICKEDgetConfig");
+				Cocos2dxLuaJavaBridge.releaseLuaFunction(luaCallbackFunction);
+			}
+		});
+	}
+
 	public static void doUpgrade(String Localpath, String remoteFilePath,
-			String remoteFileName) {
+			String remoteFileName, final int luaCallbackFunction) {
 		System.out.println("yzj Localpath" + Localpath);
 		System.out.println("yzj remoteFilePath" + remoteFilePath);
 		System.out.println("yzj remoteFileName" + remoteFileName);
@@ -198,6 +212,15 @@ public class NativeProxy {
 		downloadSth(Localpath, remoteFilePath, remoteFileName);
 		unZip(Localpath + remoteFileName, Localpath);
 		delete(new File(Localpath + remoteFileName));
+		mContext.runOnGLThread(new Runnable() {
+			@Override
+			public void run() {
+				System.out.println("yzj getConfig");
+				Cocos2dxLuaJavaBridge.callLuaFunctionWithString(
+						luaCallbackFunction, "CLICKEDgetConfig");
+				Cocos2dxLuaJavaBridge.releaseLuaFunction(luaCallbackFunction);
+			}
+		});
 	}
 
 	public static void t(String str) {
